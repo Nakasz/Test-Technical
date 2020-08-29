@@ -3,6 +3,7 @@
 * Visual Studio Code
 * Terminal
 * Browser FIrefox
+* Lampp
 
 **Cara Menjalankan program php melalui terminal**
 php nama_program.php
