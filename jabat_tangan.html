@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Jabat Tangan</title>
+	    <meta name="theme-color" content="#5D4037">
+	    <meta name="Description" content="Soal nomor 3">
+	</head>
+<body>
+    <style>
+        body{
+	 font-family: sans-serif;
+}
+ 
+h1{
+	text-align: left;
+	font-weight: 800;
+}
+.ini_form{
+	box-sizing : border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+ </style>
+        <h1>Handshake</h1>
+        <br>
+        <form class="ini_form" action="#">
+            <input type="number" name="angka" id="angka" required placeholder="Masukkan jumlah orang">
+            <input class="tombol" type="button" onclick="hitung_jabattangan()" value="Cetak">
+            <div>Hasil Jabat Tangan : 
+            </div>
+             <input type="number" name="angka" id="hasil" required placeholder="0" readonly>
+        </form>
+</body>
+<script type="text/javascript">
+function hitung_jabattangan() {
+    var v1 = document.getElementById('angka').value;
+    var i=0;
+    var t=0;
+    for(i;i<v1;i++){
+        t +=i;
+    }
+   console.log(t);
+    var print = document.getElementById('hasil');
+    print.value = t;
+}
+</script>
+</html>
